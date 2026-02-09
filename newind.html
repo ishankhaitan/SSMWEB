@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunil Sanitary Mart | Complete Bathroom Solutions</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #34495e;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 16px;
+    color: #ecf0f1;
+    font-weight: 400;
+}
+
+/* Navigation */
+nav {
+    background: #34495e;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Products */
+.product-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #1fb855;
+}
+
+/* About Section */
+.established {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.serve-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.serve-list li {
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.serve-list li:last-child {
+    border-bottom: none;
+}
+
+.serve-list li:before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Contact */
+.contact-info {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+}
+
+.contact-info strong {
+    color: #2c3e50;
+}
+
+.location-text {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+}
+
+/* Map */
+.map-container {
+    margin: 25px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    display: block;
+}
+
+/* Reviews */
+.review-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+.review-date {
+    color: #888;
+    font-size: 13px;
+}
+
+.more-reviews-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.more-reviews-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    section {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+    
+    header h1 {
+        font-size: 26px;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    
+    .map-container iframe {
+        height: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sunil Sanitary Mart</h1>
+    <p>Complete Bathroom Solutions in Guwahati</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+    <h2>Our Products</h2>
+    
+    <div class="product-item">
+        <div class="product-name">Wash Basins</div>
+        <div class="product-price">₹1,200 – ₹12,000</div>
+    </div>
+    
+    <div class="product-item">
+        <div class="product-name">Western & Indian WC</div>
+        <div class="product-price">₹4,500 – ₹30,000</div>
+    </div>
+    
+    <div class="product-item">
+        <div class="product-name">Taps & Mixers</div>
+        <div class="product-price">₹900 – ₹18,000</div>
+    </div>
+    
+    <div class="product-item">
+        <div class="product-name">Showers & Accessories</div>
+        <div class="product-price">₹700 – ₹15,000</div>
+    </div>
+    
+    <div style="margin-top: 25px;">
+        <a href="https://wa.me/919XXXXXXXXX" class="whatsapp-btn">Enquire on WhatsApp</a>
+        <a href="https://wa.me/919YYYYYYYYY" class="whatsapp-btn">Enquire on WhatsApp</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    
+    <p class="established">Established 1973</p>
+    
+    <p style="margin-bottom: 25px;">
+        Sunil Sanitary Mart is a trusted sanitaryware and bathroom solutions store serving homeowners, builders, and contractors. 
+        We focus on quality products, fair pricing, and reliable after-sales support.
+    </p>
+    
+    <h3 style="font-size: 20px; margin-bottom: 15px; color: #2c3e50;">Who We Serve</h3>
+    <ul class="serve-list">
+        <li>Homeowners & Renovators</li>
+        <li>Builders & Contractors</li>
+        <li>Interior Designers</li>
+        <li>Commercial & Residential Projects</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    
+    <div class="location-text">
+        Local showroom in Guwahati • Easy access • Quick assistance via WhatsApp
+    </div>
+    
+    <div class="contact-info">
+        <p><strong>📍 Location:</strong> Guwahati, India</p>
+        <p><strong>📞 Phone:</strong> 9435045491</p>
+        <p><strong>📞 Phone:</strong> 9101723545</p>
+    </div>
+    
+    <h3 style="font-size: 20px; margin: 30px 0 15px 0; color: #2c3e50;">Find Us on Google Maps</h3>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.569105298469!2d91.7397888113046!3d26.178159191175276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5a322442eb7f%3A0x81aab18b56aec5bb!2sSunil%20Sanitary%20Mart!5e0!3m2!1sen!2sin!4v1770623489864!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>What Our Customers Say</h2>
+    
+    <div class="review-item">
+        <p class="review-text">
+            "This is one of the best shops for all sanitary products. The owner is very polite and always ready to help. 
+            They offer good quality products at affordable prices. The customer service is excellent and I'm very happy 
+            with my experience here. I highly recommend everyone to visit this shop for all your sanitary needs."
+        </p>
+        <div class="reviewer-name">Sikha Nath</div>
+        <div class="review-date">6 months ago</div>
+    </div>
+
+    <div class="review-item">
+        <p class="review-text">
+            "Quality products, reasonable and affordable prices, attentive salesmanship, within the reach location, 
+            friendly behaviour — overall a perfect place to buy good sanitary."
+        </p>
+        <div class="reviewer-name">Vinay Kirti</div>
+        <div class="review-date">6 months ago</div>
+    </div>
+
+    <div class="review-item">
+        <p class="review-text">
+            "The prices are fair and transparent, offering excellent value for the quality of products and services 
+            provided. It's refreshing to find a shop that combines affordability with such a high standard."
+        </p>
+        <div class="reviewer-name">Prasanna Baruah</div>
+        <div class="review-date">6 months ago</div>
+    </div>
+
+    <div class="review-item">
+        <p class="review-text">
+            "I recently upgraded my bathroom with a range of products from Sunil Sanitary Mart and I am impressed with 
+            the transformation they brought to both functionality and aesthetics. From toilets and sinks to showerheads 
+            and faucets, each product was made available as per requirement and at the best rate. The owners have good 
+            product knowledge and understanding of customer needs."
+        </p>
+        <div class="reviewer-name">Rohit Sharma</div>
+        <div class="review-date">6 months ago</div>
+    </div>
+
+    <div class="review-item">
+        <p class="review-text">
+            "Very reasonable prices and friendly people. Offering great value for money."
+        </p>
+        <div class="reviewer-name">Rajib Gupta</div>
+        <div class="review-date">4 months ago</div>
+    </div>
+    
+    <a href="https://maps.app.goo.gl/h952etLUV6SiVg3L8" target="_blank" class="more-reviews-link">
+        More reviews on Google Maps →
+    </a>
+</section>
+
+<footer>
+    © 2026 Sunil Sanitary Mart. All rights reserved.
+</footer>
+
+</body>
+</html>
